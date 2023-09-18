@@ -99,6 +99,19 @@ section {
 
 .about {
     padding: var(--spacing);
+    margin-bottom: 100px;
+    position: relative;
+}
+
+.about::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    bottom: -100px;
+    width: 0;
+    height: 0;
+    border-top: 100px solid var(--primary);
+    border-right: 100vw solid transparent;
 }
 
 .about-img {
