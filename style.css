@@ -164,7 +164,20 @@ article {
 }
 
 .contact {
+    position: relative;
+    margin-top: 100px;
     text-align: center;
+}
+
+.contact::before {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: -100px;
+    width: 0;
+    height: 0;
+    border-bottom: 100px solid var(--primary);
+    border-left: 100vw solid transparent;
 }
 
 footer {
